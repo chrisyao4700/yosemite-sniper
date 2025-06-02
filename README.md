@@ -191,4 +191,3 @@ Looking for help on:
 ## 📜 License
 
 MIT © 2025 Chris Yao
-# yosemite-sniper

@@ -1,0 +1,20 @@
+// prisma/schema.prisma
+datasource db {
+  provider = "sqlite"
+  url      = "file:./app.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Task {
+  id          Int      @id @default(autoincrement())
+  name        String
+  campGround  String
+  startDate   DateTime
+  endDate     DateTime
+  autoBook    Boolean  @default(true) // 是否抢票
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
